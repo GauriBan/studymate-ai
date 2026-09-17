@@ -17,7 +17,7 @@ const [quizLoading, setQuizLoading] = useState(false);
     setAnswer("");
 
     try {
-      const response = await fetch("https://studymate-ai-ryxo.onrender.com/api/ask",  {
+      const response = await fetch("https://studymate-ai-backend-kcr1.onrender.com/api/ask",  {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const [quizLoading, setQuizLoading] = useState(false);
   setSelectedAnswers({});
 
   try {
-    const response = await fetch("https://studymate-ai-ryxo.onrender.com/api/quiz", {
+    const response = await fetch("https://studymate-ai-backend-kcr1.onrender.com/api/quiz", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
