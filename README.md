@@ -1,16 +1,55 @@
-# React + Vite
+# StudyMate AI 📚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StudyMate AI is an AI-powered learning assistant that helps students understand difficult topics and practice their knowledge through AI-generated quizzes.
 
-Currently, two official plugins are available:
+## Problem
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Students often find difficult programming and technical topics hard to understand. They also need a simple way to practice what they have learned.
 
-## React Compiler
+StudyMate AI provides simple topic explanations and short quizzes in one place.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- AI-powered topic explanations
+- AI-generated 5-question quizzes
+- Multiple-choice questions
+- Automatic score calculation
+- Learning results based on quiz performance
+- Responsive mobile-friendly UI
+- Secure Gemini API integration through backend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How It Works
+
+1. Student enters a topic.
+2. The topic is sent to the backend.
+3. Gemini AI generates an explanation or quiz.
+4. The result is displayed in the frontend.
+5. Student answers the quiz.
+6. StudyMate AI calculates the score locally.
+
+## Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+
+- Node.js
+- Express.js
+- Google Gemini API
+
+## Project Structure
+
+```text
+studymate-ai/
+├── src/
+├── server/
+│   ├── server.js
+│   └── .env
+├── public/
+├── package.json
+└── README.md
