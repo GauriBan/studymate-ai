@@ -99,6 +99,9 @@ Keep questions simple and suitable for students.`,
     }
 });
 
-app.listen(5000, () => {
-    console.log("StudyMate backend running on http://localhost:5000");
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`StudyMate backend running on port ${PORT}`);
 });
