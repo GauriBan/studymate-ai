@@ -38,7 +38,7 @@ app.post("/api/ask", async(req, res) => {
         }
 
         const response = await ai.models.generateContent({
-            model: "gemini-3.6-flash",
+            model: "gemini-3.5-flash-lite",
             contents: `Explain "${topic}" in very simple language for a student.
 
 Use plain text only.
@@ -71,7 +71,7 @@ app.post("/api/quiz", async(req, res) => {
         }
 
         const response = await ai.models.generateContent({
-            model: "gemini-3.6-flash",
+            model: "gemini-3.5-flash-lite",
             contents: `Create exactly 5 multiple choice questions about "${topic}".
 
 Return ONLY valid JSON in this format:
